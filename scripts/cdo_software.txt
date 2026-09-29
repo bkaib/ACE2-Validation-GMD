@@ -1,0 +1,50 @@
+
+Following routines from the Climate Data Operators (https://code.mpimet.mpg.de/projects/cdo) were used to produce the results shown in
+some figures:
+
+
+Figure 1
+cdo yearmean
+cdo fldmean
+
+
+Figure 2
+cdo sellevel
+cdo yearmean
+cdo fldmean
+cdo timmean
+cdo sub
+
+
+Figure 3
+cdo selmon
+cdo timmean
+cdo sub
+
+
+Figure 4
+cdo selmon
+cdo timmean
+cdo sub
+
+Figure 5
+cdo selmon
+cdo timmean
+
+Figure 6
+cdo del29feb
+cdo bandpass
+cdo timstd
+
+
+Figure 9
+cdo selmon
+cdo timpctl,95 -timmean -timmax
+
+Figure 10
+cdo selmon
+cdo setvrange
+cdo timpctl,95 -timmean -timmax
+
+
+
